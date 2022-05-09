@@ -1,2 +1,11 @@
-// this file will contain the code that controls the page that lists all Bob's episodes
-console.log("testing");
+insertTableInfo();
+
+
+function insertTableInfo() {
+    const newNode = document.createElement("td");
+    const textNode = document.createTextNode("Bob Ross painting");
+    newNode.appendChild(textNode);
+
+    const list = document.getElementById("firstRow");
+    list.insertBefore(newNode, list.children[0]);
+}
