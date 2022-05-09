@@ -3,4 +3,5 @@
 - Nathalie 
 - Alea
 - Katie
-- Masha 
+- Masha
+- Crissy
