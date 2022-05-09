@@ -16,6 +16,8 @@ function insertTableInfo(a) {
     const list = document.getElementById("myTable");
     list.insertBefore(newNode, list.children[0]);
 }
+
+// remember not to push any of the work
 // here is the whole example (what I found). We only need to use the script part but I added everthing just in case
 // <!DOCTYPE html>
 //{/* <html>
