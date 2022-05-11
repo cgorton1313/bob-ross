@@ -1,9 +1,11 @@
-insertTableInfo("a","1","2","3","4","5","6","7");
-insertTableInfo("b","1","2","3","4","5","6","7");
+for (let i = 0; i < 10; i++ ) {
+  insertTableInfo((i+1),"b","1","2","3","4","5","6","7");
+}
 
-function insertTableInfo(info1,info2,info3,info4,info5,info6,info7) {
+
+function insertTableInfo(rowNum,info1,info2,info3,info4,info5,info6,info7) {
     var table = document.getElementById("paintingsTable");
-    var row = table.insertRow(1);
+    var row = table.insertRow(rowNum);
     var cell1 = row.insertCell(0);
     var cell2 = row.insertCell(1);
     var cell3 = row.insertCell(2);
