@@ -1,3 +1,6 @@
+# Bob Ross specific ignores
+config.js
+
 # Logs
 logs
 *.log
