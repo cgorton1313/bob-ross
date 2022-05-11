@@ -1,10 +1,11 @@
+// requires
 const express = require('express'); 
 const path = require('path');
 
 const app = express();
+const config = require(__dirname + '/config.js'); // may need to add to other server-side files
 
-// send all the static stuff
-app.use(express.static(path.join(__dirname + '/public'))); 
+app.use(express.static(path.join(__dirname + '/public'))); // send all the static stuff
 
 // homepage
 app.get('/', (req, res) => {
@@ -12,6 +13,6 @@ app.get('/', (req, res) => {
     });
 
 // goes at the end
-app.listen(33233, () => {
-    console.log(`server listening at http://localhost:33233`);
+app.listen(config.app.port, () => {
+    console.log(`Bob Ross server listening at http://localhost:${config.app.port}`);
     });
