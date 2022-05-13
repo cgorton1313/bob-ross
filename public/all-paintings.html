@@ -5,17 +5,75 @@
     <title>Bob Ross tribute page</title>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <style>
+        #paintingsTable {
+            border: 5px solid rgb(0, 0, 0);
+            margin-top: 5%;
+        }
 
+    </style>
 </head>
 
 <body>
+    <!-- Navigation Bar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card">
+            <a href="#"
+                class="w3-mobile w3-bar-item w3-button w3-hover-none w3-bottombar w3-border-white w3-hover-border-black"><strong>BOB
+                    ROSS<strong></a>
+            <a href="#"
+                class="w3-mobile w3-bar-item w3-button w3-hover-none w3-bottombar w3-border-white w3-hover-border-black"><strong>HOME<strong></a>
+            <a href="#"
+                class="w3-mobile w3-bar-item w3-button w3-hover-none w3-bottombar w3-border-white w3-hover-border-black"><strong>BIO<strong></a>
+            <a href="#"
+                class="w3-mobile w3-bar-item w3-button w3-hover-none w3-bottombar w3-border-white w3-hover-border-black"><strong>ABOUT<strong></a>
+            <!--  Currently hides the right hand navigation on small screen. This needs to be fixed.-->
+            <div
+                class="w3-right w3-dropdown-hover w3-mobile w3-hover-none w3-bottombar w3-border-white w3-hover-border-black">
+                <button class="w3-button">SEASONS <i class="fa fa-caret-down"></i></button>
+                <div id="dropDown" class="w3-dropdown-content w3-bar-block" style="max-height:250px; overflow:auto">
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 1</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 2</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 3</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 4</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 5</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 6</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 7</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 8</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 9</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 10</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 11</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 12</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 13</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 14</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 15</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 16</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 17</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 18</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 19</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 20</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 21</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 22</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 23</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 24</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 25</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 26</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 27</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 28</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 29</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 30</a>
+                    <a href="#" class="w3-bar-item w3-button w3-mobile">Season 31</a>
+                </div>
+                <!-- Add drop down -->
+            </div>
+        </div>
+    </div>
+
+    <!-- creates table: painting index, image src, painting title, season, episode, num-colors, youtiube src, colors-->
     <div id="all-paintings" class="w3-container">
 
-        // painting index, image src, painting title, season, episode, num-colors, youtiube src, colors
-
-
-        <table id = "paintingsTable">
+        <table id="paintingsTable">
             <tr>
                 <th>Image Source</th>
                 <th>Painting Title</th>
@@ -24,14 +82,6 @@
                 <th>Number of Colors</th>
                 <th>Youtube Source</th>
                 <th>List of Colors</th>
-            </tr>
-            
-            <tr >
-
-            </tr>
-            
-            <tr>
-
             </tr>
         </table>
 
