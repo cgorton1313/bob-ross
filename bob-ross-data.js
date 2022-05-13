@@ -43,9 +43,11 @@ async function getQueryData(sql) {
 }
 
 async function sqlTest() {
-    let sql = `
-    SELECT *
-        FROM paintings`;
+    let sql = "SELECT * FROM BobRossData";
     let result = await getQueryData(sql);
     return result;
+}
+
+module.exports = {
+    sqlTest
 }
