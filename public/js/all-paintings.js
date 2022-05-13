@@ -1,5 +1,7 @@
+let response = await fetch('./paintings');
+let paintingData = await response.json();
 
-const paintingData = [{painting_index: 283, season: 1, episode: 2, painting_title: 'Mt. McKinley'},{painting_index: 284, season: 1, episode: 3, painting_title: 'Ebony Sunset'}];
+//const paintingData = [{painting_index: 283, season: 1, episode: 2, painting_title: 'Mt. McKinley'},{painting_index: 284, season: 1, episode: 3, painting_title: 'Ebony Sunset'}];
 
 // image src, painting title, season, episode, num-colors, youtube src, colors
 
@@ -7,7 +9,7 @@ for (let i = 0; i < paintingData.length; i++) {
   insertTableInfo((i + 1), "a", paintingData[i].painting_title, paintingData[i].season, paintingData[i].episode, "4", "5", "6");
 }
 
-function insertTableInfo(rowNum, imgSource, pntTitle, season, episode, numClrs, ytSource, colors) {
+async function insertTableInfo(rowNum, imgSource, pntTitle, season, episode, numClrs, ytSource, colors) {
   var table = document.getElementById("paintingsTable");
   var row = table.insertRow(rowNum);
   var imgSourceCell = row.insertCell(0);
