@@ -1,1 +1,9 @@
 /*Color Pallete: #b59bc9 is out background color. #6a4e80 can replace the blacks*/
+
+#paintingsTable {
+    border: 5px solid rgb(0, 0, 0);
+}
+#all-paintings {
+    margin-top: 5%;
+    margin-right:50%;
+}
