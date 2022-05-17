@@ -13,9 +13,7 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
-// const paintingData = [{ painting_index: 283, season: 1, episode: 2, painting_title: 'Mt. McKinley' }, { painting_index: 284, season: 1, episode: 3, painting_title: 'Ebony Sunset' }];
 app.get('/paintings', async function (req, res) {
-    // res.json(paintingData);
     res.json (await bobRossData.getPaintings());
 });
 

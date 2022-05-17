@@ -34,7 +34,6 @@ async function getQueryData(sql) {
         result = '{Error}';
     }
 
-    // it's important to close the database connection
     connection.end();
 
     return result;

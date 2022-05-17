@@ -8,4 +8,4 @@ async function testSomething() {
     console.log(paintingsData);
 }
 
-testSomething(); // this was working? I haven't changed anything but when I tried it at home i couldn't get into the database
+testSomething();
