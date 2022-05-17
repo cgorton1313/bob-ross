@@ -1,12 +1,16 @@
-/*Color Pallete: #998FC7 is our background purple.*/
+/*Color Pallete: #C7BAE2 is our background purple.*/
 /*#59344F can replace the blacks.*/
 /*#FFFEFF is the color white.*/
 /*#73937E will temporarly replace all grays*/
 
 body {
-    background-color:#998FC7;
-
+    background-color:#C7BAE2;
 }
+#seasonsBody {
+    background-color: #FFFEFF;
+}
+
+
 
 /* #paintingsTable {
     border: 5px solid rgb(0, 0, 0);
