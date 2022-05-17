@@ -1,4 +1,9 @@
-/*Color Pallete: #b59bc9 is out background color. #6a4e80 can replace the blacks*/
+<<<<<<< HEAD
+/*Color Pallete: #998FC7 is our background purple.*/
+/*#59344F can replace the blacks.*/
+/*#FFFEFF is the color white.*/
+/*#73937E will temporarly replace all grays*/
+=======
 
 /* #paintingsTable {
     border: 5px solid rgb(0, 0, 0);
@@ -6,4 +11,9 @@
 #all-paintings {
     margin-top: 5%;
     margin-right:50%;
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> e311c51940a245a5a995d73aaabb8d9a34bad27c
+>>>>>>> 07719e2d5b3834875efda83f86f20a1439e87760
