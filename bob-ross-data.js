@@ -46,12 +46,19 @@ async function sqlTest() {
 }
 
 async function getPaintings() {
-    // what is the paintings data that we need?
-    let sql = "SELECT img_src, painting_title, painting_index, episode, season, colors, youtube_src From BobRossData ORDER BY season asc, episode asc";
+    let sql = "SELECT image_file, img_src, painting_title, painting_index, episode, season, colors, youtube_src From BobRossData ORDER BY season asc, episode asc";
+    let result = await getQueryData(sql);
+    return result;
+}
+
+async function getPainting(id) {
+    let sql = "SELECT image_file, img_src, painting_title, painting_index, episode, season, colors, youtube_src From BobRossData WHERE painting_index = " + id;
     let result = await getQueryData(sql);
     return result;
 }
 
 module.exports = {
-    sqlTest, getPaintings
+    sqlTest,
+    getPaintings,
+    getPainting
 }
