@@ -14,7 +14,12 @@ app.get('/', (req, res) => {
 });
 
 app.get('/paintings', async function (req, res) {
-    res.json (await bobRossData.getPaintings());
+    res.json(await bobRossData.getPaintings());
+});
+
+app.get('/painting', async function (req, res) {
+    let id = req.query.id;
+    res.json(await bobRossData.getPainting(id));
 });
 
 // always goes last
