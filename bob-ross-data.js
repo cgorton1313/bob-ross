@@ -2,7 +2,6 @@ const config = require('./config.js');
 const mysql = require('mysql');
 const util = require('util'); // for promisify
 
-// this function will connect to the database, query, disconnect, and return the query result
 async function getQueryData(sql) {
     let connection = mysql.createConnection({
         host: config.db.host,
@@ -11,7 +10,6 @@ async function getQueryData(sql) {
         database: config.db.database
     });
 
-    // standard connect operation with some error handling
     connection.connect(function (err) {
         if (err) {
             console.log('error when connecting to db:', err);
@@ -24,7 +22,6 @@ async function getQueryData(sql) {
 
     let query = util.promisify(connection.query).bind(connection); // node native promisify
 
-    // try to query the database, handle errors if they happen
     let result;
     try {
         result = await query(sql);

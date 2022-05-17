@@ -6,6 +6,8 @@ let navHtml = `
                 class="w3-mobile w3-bar-item w3-button w3-hover-none w3-bottombar w3-border-white w3-hover-border-black"><strong>HOME<strong></a>
             <a href="bio.html"
                 class="w3-mobile w3-bar-item w3-button w3-hover-none w3-bottombar w3-border-white w3-hover-border-black"><strong>BIO<strong></a>
+            <a href="all-paintings.html"
+                class="w3-mobile w3-bar-item w3-button w3-hover-none w3-bottombar w3-border-white w3-hover-border-black"><strong>PAINTINGS<strong></a>
             <a href="about.html"
                 class="w3-mobile w3-bar-item w3-button w3-hover-none w3-bottombar w3-border-white w3-hover-border-black"><strong>ABOUT<strong></a>
 
