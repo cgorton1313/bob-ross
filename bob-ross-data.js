@@ -4,8 +4,6 @@ const util = require('util'); // for promisify
 
 // this function will connect to the database, query, disconnect, and return the query result
 async function getQueryData(sql) {
-    // this statement uses the values from config.js
-    // it's common to keep usernames, passwords, etc., in a config file
     let connection = mysql.createConnection({
         host: config.db.host,
         user: config.db.user,
@@ -36,16 +34,24 @@ async function getQueryData(sql) {
         result = '{Error}';
     }
 
-    // it's important to close the database connection
     connection.end();
 
     return result;
 }
 
 async function sqlTest() {
-    let sql = `
-    SELECT *
-        FROM paintings`;
+    let sql = "SELECT * FROM BobRossData";
     let result = await getQueryData(sql);
     return result;
+}
+
+async function getPaintings() {
+    // what is the paintings data that we need?
+    let sql = "SELECT img_src, painting_title, painting_index, episode, season, colors, youtube_src From BobRossData ORDER BY season asc, episode asc";
+    let result = await getQueryData(sql);
+    return result;
+}
+
+module.exports = {
+    sqlTest, getPaintings
 }
