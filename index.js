@@ -37,7 +37,6 @@ app.get('/season', async function (req, res) {
     res.json(await bobRossData.getSeason(season));
 });
 
-// always goes last
 app.listen(config.app.port, () => {
     log.info(`Bob Ross server listening at http://localhost:${config.app.port}`);
 });
