@@ -32,9 +32,9 @@ app.get('/painting', async function (req, res) {
 });
 
 // returns single season data
-app.get('/season', async function (req, res){
-    let id = req.query.id;
-    res.json(await bobRossData.getSeason(id));
+app.get('/season', async function (req, res) {
+    let season = req.query.season;
+    res.json(await bobRossData.getSeason(season));
 });
 
 // always goes last
