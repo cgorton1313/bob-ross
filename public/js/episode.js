@@ -15,5 +15,7 @@ async function insertEpisodeInfo(a) {
     let paintingData = await response.json();
     if (paintingData[a].painting_index == id) {
         console.log(paintingData[a]);
+        document.getElementById("title").innerHTML = paintingData[a].painting_title
+        document.getElementById("image").src = paintingData[a].img_src;
     }
 }
