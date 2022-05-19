@@ -2,6 +2,13 @@ const config = require('./config.js');
 const mysql = require('mysql');
 const util = require('util'); // for promisify
 
+const SimpleNodeLogger = require('simple-node-logger');
+const opts = {
+    logFilePath: config.app.logFile,
+    timestampFormat: 'YYYY-MM-DD HH:mm:ss.SSS'
+};
+const log = SimpleNodeLogger.createSimpleLogger(opts);
+
 async function getQueryData(sql) {
     let connection = mysql.createConnection({
         host: config.db.host,
@@ -12,11 +19,9 @@ async function getQueryData(sql) {
 
     connection.connect(function (err) {
         if (err) {
-            console.log('error when connecting to db:', err);
-            // log.error('error when connecting to db:', err);
+            log.error('error when connecting to db:', err);
         } else {
-            console.log('Connected to database ' + config.db.database + ' as user ' + config.db.user);
-            // log.info('Connected to database ' + config.db.database + ' as user ' + config.db.user);
+            log.info('Connected to database ' + config.db.database + ' as user ' + config.db.user);
         }
     });
 
@@ -26,8 +31,7 @@ async function getQueryData(sql) {
     try {
         result = await query(sql);
     } catch (err) {
-        console.log(err);
-        // log.error(err);
+        log.error(err);
         result = '{Error}';
     }
 
@@ -49,7 +53,13 @@ async function getPaintings() {
 }
 
 async function getPainting(id) {
-    let sql = "SELECT image_file, img_src, painting_title, painting_index, episode, season, colors, youtube_src From BobRossData WHERE painting_index = " + id;
+    let sql = "SELECT image_file, img_src, painting_title, painting_index, episode, season, colors, youtube_src FROM BobRossData WHERE painting_index = " + id;
+    let result = await getQueryData(sql);
+    return result;
+}
+
+async function getSeason(season) {
+    let sql = "SELECT DISTINCT * FROM BobRossData WHERE season = " + season + " ORDER BY episode ASC";
     let result = await getQueryData(sql);
     return result;
 }
@@ -57,5 +67,6 @@ async function getPainting(id) {
 module.exports = {
     sqlTest,
     getPaintings,
-    getPainting
+    getPainting,
+    getSeason
 }

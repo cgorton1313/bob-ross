@@ -12,22 +12,39 @@
   <!-- Navigation Bar -->
   <div id="navBar" class="w3-top"></div>
 
-  <div class="w3-row w3-padding-64 w3-margin">
-    <div class="w3-half w3-container">
-      <img src="img/full-size-paintings/painting10.png" alt="painting" width="600">
+  <!-- Episode Information -->
+  <div class="w3-row w3-padding-64">
+    <!-- Image -->
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+      <img id="image"src=" " alt="painting" class="w3-round w3-image w3-opacity-min"
+        width="600" height="750">
     </div>
-    <div  class="w3-quarter w3-container w3-padding-64 w3-white w3-center">
-      <h1 class="w3-margin-bottom">Text</h1>
 
-      <h3>Date</h3>
-      <h3>Episode</h3>
-      <h3>Contents</h3>
+    <!-- Text -->
+    <div class="w3-col m6 w3-padding-large">
+      <h1 id="title"class="w3-center"> </h1><br>
+      <h5 id="more-text"class="w3-center"> </h5>
+      <p id="content"class="w3-large"> </p>
+      <br>
+      <!-- Button to open Modal -->
+      <button onclick="document.getElementById('id01').style.display='block'"
+        class="w3-button w3-xlarge w3-round w3-block" style=" background-color: #C7BAE2;">Button</button>
+
+      <!-- The Modal -->
+      <div id="id01" class="w3-modal w3-animate-opacity">
+        <div class="w3-modal-content">
+          <div class="w3-container">
+            <span onclick="document.getElementById('id01').style.display='none'"
+              class="w3-button w3-display-topright">&times;</span>
+            <p>Some text in the Modal..</p>
+            <!-- Image Id needs to be created -->
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            </iframe>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-
-  <!-- <div class="w3-padding-64 w3-margin">
-        <img src="img/full-size-paintings/painting10.png" alt="painting">
-    </div> -->
 
 
   <script src="js/episode.js"></script>
