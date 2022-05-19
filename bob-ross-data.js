@@ -53,13 +53,13 @@ async function getPaintings() {
 }
 
 async function getPainting(id) {
-    let sql = "SELECT image_file, img_src, painting_title, painting_index, episode, season, colors, youtube_src From BobRossData WHERE painting_index = " + id;
+    let sql = "SELECT image_file, img_src, painting_title, painting_index, episode, season, colors, youtube_src FROM BobRossData WHERE painting_index = " + id;
     let result = await getQueryData(sql);
     return result;
 }
 
-async function getSeason(id) {
-    let sql = "SELECT image_file, img_src, painting_title, painting_index, episode, season, colors, youtube_src From BobRossData WHERE painting_index = " + id;
+async function getSeason(season) {
+    let sql = "SELECT DISTINCT * FROM BobRossData WHERE season = " + season;
     let result = await getQueryData(sql);
     return result;
 }
@@ -67,6 +67,6 @@ async function getSeason(id) {
 module.exports = {
     sqlTest,
     getPaintings,
-    getPainting, 
+    getPainting,
     getSeason
 }
