@@ -6,6 +6,13 @@ const bobRossData = require(__dirname + '/bob-ross-data.js');
 
 const app = express();
 
+const SimpleNodeLogger = require('simple-node-logger');
+const opts = {
+    logFilePath: config.app.logFile,
+    timestampFormat: 'YYYY-MM-DD HH:mm:ss.SSS'
+};
+const log = SimpleNodeLogger.createSimpleLogger(opts);
+
 app.use(express.static(path.join(__dirname + '/public'))); // send all the static stuff
 
 // homepage
@@ -24,5 +31,5 @@ app.get('/painting', async function (req, res) {
 
 // always goes last
 app.listen(config.app.port, () => {
-    console.log(`Bob Ross server listening at http://localhost:${config.app.port}`);
+    log.info(`Bob Ross server listening at http://localhost:${config.app.port}`);
 });
