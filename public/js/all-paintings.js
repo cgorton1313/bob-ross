@@ -19,7 +19,7 @@ function insertTableInfo(rowNum, imgFile, pntTitle, pntIndex, season, episode,co
   var ytSourceCell = row.insertCell(4);
   var colorsCell = row.insertCell(5);
   console.log(imgFile)
-  imgSourceCell.innerHTML = `<img src="img/thumbnail-image/${imgFile}"></img>`;
+  imgSourceCell.innerHTML = `<img src="img/thumbnail-images/${imgFile}"></img>`;
   pntTitleCell.innerHTML = "<a href='individual-episode.html?id="+pntIndex+"'>"+pntTitle+"</a>";
   seasonCell.innerHTML = season;
   episodeCell.innerHTML = episode;
