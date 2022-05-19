@@ -59,7 +59,7 @@ async function getPainting(id) {
 }
 
 async function getSeason(season) {
-    let sql = "SELECT DISTINCT * FROM BobRossData WHERE season = " + season;
+    let sql = "SELECT DISTINCT * FROM BobRossData WHERE season = " + season + " ORDER BY episode ASC";
     let result = await getQueryData(sql);
     return result;
 }
