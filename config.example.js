@@ -5,7 +5,8 @@
 
 const config = {
     app: {
-        port: 33233
+        port: 33233,
+        logFile: "bob-ross.log"
     },
     db: {
         host: '',

@@ -20,13 +20,21 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
+// returns all paintings data
 app.get('/paintings', async function (req, res) {
     res.json(await bobRossData.getPaintings());
 });
 
+// returns single painting data
 app.get('/painting', async function (req, res) {
     let id = req.query.id;
     res.json(await bobRossData.getPainting(id));
+});
+
+// returns single season data
+app.get('/season', async function (req, res){
+    let id = req.query.id;
+    res.json(await bobRossData.getSeason(id));
 });
 
 // always goes last
