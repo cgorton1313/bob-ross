@@ -13,9 +13,9 @@ async function insertEpisodeInfo(a) {
     document.getElementById("more-text").innerHTML= "Epsiode: " +paintingData[0].episode+"<br>Season: "+paintingData[0].season;
     document.getElementById("content").innerHTML= "'"+paintingData[0].painting_title + "' was created by Bob Ross in one of his many painting tutorials. '" + paintingData[0].painting_title +"' is epsiode " +paintingData[0].episode + " from season " +paintingData[0].season+" from his show 'The Joy of Painting'. It includes the colors "+paintingData[0].colors+".";
     var img = document.createElement("img");
-    img.setAttribute("src", "img/full-size-paintings/"+paintingData[0].img_src);
-    img.setAttribute("width", "100%");
-    img.setAttribute("height", "100%");
+    img.setAttribute("src", "img/full-size-paintings/"+paintingData[0].image_file);
+    // img.setAttribute("width", "100%");
+    // img.setAttribute("height", "100%");
     img.setAttribute("alt", "painting");
     document.getElementById("imgDiv").appendChild(img).innerHTML= img
 }
