@@ -4,7 +4,7 @@ getTableInfo();
 async function getTableInfo() {
   let response = await fetch('./paintings');
   let paintingData = await response.json();
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < paintingData.length; i++) {
     insertTableInfo((i + 1), paintingData[i].image_file, paintingData[i].painting_title, paintingData[i].painting_index, paintingData[i].season, paintingData[i].episode, paintingData[i].colors, paintingData[i].youtube_src);
   }
 }
