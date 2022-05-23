@@ -18,7 +18,7 @@ let navHtml = `
                 <div id="dropDown" class="w3-dropdown-content w3-bar-block" style="max-height:250px; overflow:auto">`;
 
                 for (let i = 1; i <= 31; i++) {
-    navHtml += `<a href="season.html?season=` + i + `" class="w3-bar-item w3-button w3-mobile">Season ` + i + `</a>`
+    navHtml += `<a href="individual-season.html?season=` + i + `" class="w3-bar-item w3-button w3-mobile">Season ` + i + `</a>`
 }
 
 navHtml += `</div></div></div></div>`
