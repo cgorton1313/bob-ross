@@ -1,4 +1,4 @@
---replace # with desired number
+--replace # with desired number.
 
 -- to get all data by the painting's id.
 SELECT * FROM BobRossData WHERE painting_index = #;
