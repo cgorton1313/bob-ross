@@ -15,6 +15,11 @@ body {
     margin-top: 80px; 
   }
 
+#header {
+  padding:128px 16px;
+  background-color: #C7BAE2;
+}
+
 /* #paintingsTable {
     border: 5px solid rgb(0, 0, 0);
 }
@@ -26,10 +31,6 @@ body {
 
 img {
     border: 10px solid#C7BAE2;
-  }
-
-body {
-     
   }
 
 h1{
