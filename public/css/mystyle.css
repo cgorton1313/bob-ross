@@ -8,8 +8,8 @@ body {
     background-color: #FFFEFF;
 }
 
-#home, #bio, #about-page, #seasons, #individual-seasons, #all-paintings {
-    margin-top: 75px; 
+#home, #bio, #about-page, #seasons, #individual-seasons, #all-paintings, #individual-episode {
+    margin-top: 95px; 
   }
 
 header {
