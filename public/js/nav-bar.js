@@ -1,7 +1,7 @@
 let navHtml = `
     <div class="w3-top">
         <div class="w3-bar w3-white w3-padding w3-card">
-            <span class="w3-mobile w3-bar-item w3-border-white"><strong>BOB ROSS<strong></span>
+            <span class="w3-mobile w3-bar-item w3-border-white">  <img src="img/bob-ross-navBar.png" class="img-fluid"></span>
             <a href="index.html"
                 class="w3-mobile w3-bar-item w3-button w3-hover-none w3-bottombar w3-border-white w3-hover-border-black"><strong>HOME<strong></a>
             <a href="bio.html"
