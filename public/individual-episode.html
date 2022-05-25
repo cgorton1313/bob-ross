@@ -10,14 +10,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-</head>
+
 
 <body>
   <!-- Navigation Bar -->
-  <div id="navBar" class="w3-top"></div>
+  <div id="navBar" class="w3-top w3-xlarge"></div>
 
   <!-- Episode Information -->
-  <div class="w3-row w3-padding-64">
+  <div class="w3-row w3-padding-64" id="individual-episode">
     <!-- Image -->
     <div id="imgDiv" class="w3-col m6 w3-padding-large w3-hide-small">
 
@@ -25,33 +25,31 @@
 
     <!-- Text -->
     <div class="w3-col m6 w3-padding-large">
-      <h1 id="title" class="w3-center"> </h1><br>
-      <h5 id="more-text" class="w3-center"> </h5>
-      <p id="content" class="w3-large"> </p>
+      <h1 id="title"class="w3-center"> </h1><br>
+      <h5 id="more-text"class="w3-center"> </h5>
+      <p id="content"class="w3-large"> </p>
+      <ul id = "listOfColors">
+      </ul>
       <br>
+      
       <!-- Button to open Modal -->
       <button onclick="document.getElementById('id01').style.display='block'"
-        class="w3-button w3-xlarge w3-round w3-block" style=" background-color: #C7BAE2;">Button</button>
+        class="w3-button w3-xlarge w3-round w3-block" style=" background-color: #C7BAE2;">Watch Episode</button>
 
       <!-- The Modal -->
-      <div id="id01" class="w3-modal w3-animate-opacity">
+      <div id="id01" class="w3-modal">
         <div class="w3-modal-content">
-          <div class="w3-container">
+          <div class="container w3-center">
+            <iframe class="responsive-iframe" id="video" src=" " style="width: 95%;"></iframe>
             <span onclick="document.getElementById('id01').style.display='none'"
               class="w3-button w3-display-topright">&times;</span>
-            <p>Some text in the Modal..</p>
-            <!-- Image Id needs to be created -->
-            <iframe id="video" src=" ">
-            </iframe>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
 
-  <script src="js/episode.js"></script>
-  <script src="js/nav-bar.js"></script>
+      <script src="js/episode.js"></script>
+      <script src="js/nav-bar.js"></script>
 
 </body>
 
