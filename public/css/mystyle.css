@@ -7,9 +7,6 @@ body {
     /* background-color:#C7BAE2; */
     background-color: #FFFEFF;
 }
-#seasonsBody {
-    background-color: #FFFEFF;
-}
 
 #home, #bio, #about-page, #seasons, #individual-seasons, #all-paintings {
     margin-top: 75px; 
@@ -29,7 +26,7 @@ body, h1, h2, h3, h4, h5, h6{
 }
 
 #navBar{
-    font-family: 'Bebas Neue', cursive; 
+    font-family: 'Bebas Neue, cursive; 
 }
 
 /* modal css (from w3-schools) */
