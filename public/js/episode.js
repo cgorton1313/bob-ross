@@ -3,7 +3,7 @@ let id = parseInt(urlParams.get('id'));
 
 insertEpisodeInfo();
 
-async function insertEpisodeInfo(a) {
+async function insertEpisodeInfo() {
     let response = await fetch('./painting?id=' + id);
     let paintingData = await response.json();
     
