@@ -50,3 +50,9 @@ body, h1, h2, h3, h4, h5, h6{
   width: 100%;
   height: 100%;
 }
+
+#subtitle1 {
+  border-left-style: solid;
+  border-color: #59344F;
+  border-width: medium;
+} 
