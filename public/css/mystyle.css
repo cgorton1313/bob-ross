@@ -7,6 +7,7 @@ body {
     /* background-color:#C7BAE2; */
     background-color: #FFFEFF;
 }
+
 #seasonsBody {
     background-color: #FFFEFF;
 }
@@ -20,6 +21,7 @@ header {
   background-color: #C7BAE2;
 }
 
+/* Borders for all paintings and induvidual paintings */
 #paintingsTable img, #imgDiv img {
     border: 10px solid#C7BAE2;
   }
