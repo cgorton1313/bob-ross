@@ -70,3 +70,7 @@ body, h1, h2, h3, h4, h5, h6{
   width: 42px;
   height: 42px;
 }
+
+#bioPageFont p {
+  font-family: 'Times New Roman', serif;
+}
