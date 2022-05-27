@@ -58,3 +58,9 @@ body, h1, h2, h3, h4, h5, h6{
   border-color: #59344F;
   border-width: 5px;
 } 
+
+.sideImage {
+  float: right;
+  width: 42px;
+  height: 42px;
+  }
