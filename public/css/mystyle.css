@@ -7,6 +7,9 @@ body {
     /* background-color:#C7BAE2; */
     background-color: #FFFEFF;
 }
+#seasonsBody {
+    background-color: #FFFEFF;
+}
 
 #home, #bio, #about-page, #seasons, #individual-seasons, #all-paintings, #individual-episode {
     margin-top: 95px; 
@@ -17,7 +20,7 @@ header {
   background-color: #C7BAE2;
 }
 
-img {
+#paintingsTable img, #imgDiv img {
     border: 10px solid#C7BAE2;
   }
 
@@ -51,5 +54,5 @@ body, h1, h2, h3, h4, h5, h6{
 #subtitle1 {
   border-left-style: solid;
   border-color: #59344F;
-  border-width: medium;
+  border-width: 5px;
 } 
