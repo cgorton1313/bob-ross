@@ -17,7 +17,7 @@ async function insertEpisodeRow(){
     </div>
     </div>
     <h3 id = "EpTitle"class="w3-opacity w3-center"><i>${paintingData[i].painting_title}</i></h3>
-    <p id = "EpNum"class="w3-opacity w3-center"><i>${paintingData[i].episode}</i></p>
+    <p id = "EpNum"class="w3-opacity w3-center"><i> Episode ${paintingData[i].episode}</i></p>
     </div>`
         document.getElementById("seasonDiv").innerHTML += episodeRowHtml
     }
