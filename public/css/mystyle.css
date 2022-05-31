@@ -78,9 +78,5 @@ body, h1, h2, h3, h4, h5, h6{
 }
 
 #bioPageFont p {
-  font-family: 'Times New Roman', serif;
-}
-
-.borderC {
-  border-style: hidden;
-}
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Pathway Gothic One', sans-serif;
