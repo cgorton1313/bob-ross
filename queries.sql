@@ -4,7 +4,7 @@
 SELECT * FROM BobRossData WHERE painting_index = #;
 
 -- to get painting's img, title, season, episode, colors, video and index. Ordered by season and episode.
-SELECT img_src, painting_title, painting_index, episode, season, colors, youtube_src From BobRossData
+SELECT img_src, painting_title, painting_index, episode, season, colors,color_hex,youtube_src From BobRossData
 ORDER BY season asc, episode asc;
 
 -- to get paintings by season. Ordered by episode.
