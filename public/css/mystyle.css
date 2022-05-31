@@ -7,11 +7,12 @@ body {
     /* background-color:#C7BAE2; */
     background-color: #FFFEFF;
 }
+
 #seasonsBody {
     background-color: #FFFEFF;
 }
 
-#home, #bio, #about-page, #seasons, #individual-seasons, #all-paintings {
+#home, #bio, #about-page, #seasons, #individual-seasons, #all-paintings, #individual-episode {
     margin-top: 95px; 
   }
 
@@ -20,7 +21,8 @@ header {
   background-color: #C7BAE2;
 }
 
-img {
+/* Borders for all paintings and induvidual paintings */
+#paintingsTable img, #imgDiv img {
     border: 10px solid#C7BAE2;
   }
 
@@ -51,8 +53,24 @@ body, h1, h2, h3, h4, h5, h6{
   height: 100%;
 }
 
-#subtitle1 {
+.subtitle {
   border-left-style: solid;
   border-color: #59344F;
-  border-width: medium;
+  border-width: 5px;
 } 
+
+.sideimgRight {
+  float: right;
+  width: 42px;
+  height: 42px;
+}
+
+.sideimgLeft {
+  float: left;
+  width: 42px;
+  height: 42px;
+}
+
+#bioPageFont p {
+  font-family: 'Times New Roman', serif;
+}
