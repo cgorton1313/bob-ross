@@ -11,7 +11,7 @@ let navHtml = `
           class="w3-bar-item w3-button w3-hover-none w3-bottombar w3-border-white w3-hover-border-black"><strong>ABOUT<strong></a>
       <div
           class="w3-right w3-dropdown-hover w3-hover-none w3-bottombar w3-border-white w3-hover-border-black">
-          <a href=" " class="w3-button">SEASONS <i class="fa fa-caret-down"></i></a>
+          <a class="w3-button">SEASONS <i class="fa fa-caret-down"></i></a>
           <div id="dropDown" class="w3-dropdown-content w3-bar-block" style="max-height:250px; overflow:auto">`;
 
 for (let i = 1; i <= 31; i++) {
