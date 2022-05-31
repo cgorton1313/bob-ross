@@ -77,6 +77,20 @@ body, h1, h2, h3, h4, h5, h6{
   height: 42px;
 }
 
+#borderC {
+  border-style: hidden;
+}
+
 #bioPageFont p {
-  font-family: 'Times New Roman', serif;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Pathway Gothic One', sans-serif;
+}
+
+ul {
+  font-size: 25px;
+}
+
+.about-text{
+  font-family: 'Open Sans', sans-serif;
+font-family: 'Pathway Gothic One', sans-serif;
 }
