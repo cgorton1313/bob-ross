@@ -7,7 +7,6 @@ async function insertEpisodeInfo() {
     let response = await fetch('./painting?id=' + id);
     let paintingData = await response.json();
     
-
     document.getElementById("title").innerHTML = paintingData[0].painting_title
     document.getElementById("video").src = paintingData[0].youtube_src;
     document.getElementById("more-text").innerHTML = "Epsiode: " + paintingData[0].episode + "<br>Season: " + paintingData[0].season;
@@ -26,35 +25,9 @@ async function insertEpisodeInfo() {
     const colorsHexList = JSON.parse(result2);
 
     for (let i = 0; i < colorsList.length; i++) {
-        let half1 = colorsList[i];
-        let half2 = colorsHexList[i];  
+        let half1 = colorsList[i]; 
         let div = "<div class = 'w3-row'><div class='w3-half w3-container'> <h2>- "+half1+"</h2> </div><div class='w3-half w3-container'style='background-color:"+colorsHexList[i]+"'><h2>"+colorsHexList[i]+"</h2></div></div>"
        
         document.getElementById("listOfColors").innerHTML += div
-        // // // Create a "li" element:
-        // const newNode = document.createElement("li");
-        // // Create a text node: colorsList[i]
-        // // var a = textNode.insertCell(0);
-        // let a;
-        // a.innerHTML = div;
-        // const textNode = document.createTextNode(a);
-
-        // // // Append text node to "li" element:
-        // newNode.appendChild(textNode);
-        // // // Insert before existing child:
-        // const list = document.getElementById("listOfColors");
-        // list.insertBefore(newNode, list.children[0]);
     }
-    // var x = document.createElement("TABLE");
-    // x.setAttribute("id", "myTable");
-    // document.body.appendChild(x);
-
-    // var y = document.createElement("TR");
-    // y.setAttribute("id", "myTr");
-    // document.getElementById("myTable").appendChild(y);
-
-    // var z = document.createElement("TD");
-    // var t = document.createTextNode(paintingData[0].color_hex);
-    // z.appendChild(t);
-    // document.getElementById("myTr").appendChild(z);
 }
